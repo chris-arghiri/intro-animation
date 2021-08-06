@@ -1,0 +1,56 @@
+.App {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--preloader-bg-color, hsl(0, 25%, 90%));
+  color: hsl(0, 0, 0);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.Wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Tourney', cursive;
+  font-size: 2.4rem;
+
+  height: 100vh;
+  width: 100%;
+
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+
+.Top {
+  opacity: 0;
+}
+
+span:nth-child(2),
+span:nth-child(12),
+.OnlyTop,
+.OnlyBott,
+.Full {
+  font-weight: 900;
+}
+
+.Bott {
+  opacity: 0;
+}
+
+.OnlyTop {
+  opacity: 0;
+  transform: translate3d(0, 40%, 0);
+  -webkit-transform: translate3d(0, 40%, 0);
+  clip-path: inset(0 0 40% 0);
+}
+
+.OnlyBott {
+  opacity: 0;
+  transform: translate3d(0, -40%, 0);
+  -webkit-transform: translate3d(0, -40%, 0);
+  clip-path: inset(50% 0 0 0);
+}

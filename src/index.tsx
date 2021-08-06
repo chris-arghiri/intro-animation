@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App text='place your text here' />
   </React.StrictMode>,
   document.getElementById('root')
 );
